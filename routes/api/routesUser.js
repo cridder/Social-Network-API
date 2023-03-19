@@ -1,3 +1,4 @@
+//
 const router = require("express").Router();
 
 const {
@@ -10,6 +11,7 @@ const {
 	friendDelete,
 } = require("../../controllers/controllerUser");
 
+//
 router.route("/").get(getUserss).post(usersCreate);
 
 router
@@ -20,4 +22,5 @@ router
 
 router.route("/:userId/friends/:friendId").post(friendAdd).delete(friendDelete);
 
+//
 module.exports = router;

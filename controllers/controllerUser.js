@@ -1,5 +1,7 @@
+//
 const Users = require("../models/Users");
 
+//
 module.exports = {
 	// Create a new user
 	usersCreate(req, res) {

@@ -1,3 +1,4 @@
+//
 const { Schema, model } = require("mongoose");
 const reactionsSchema = require("./Reactions");
 const moment = require("moment");
@@ -31,13 +32,16 @@ const thoughtSchema = new Schema(
 	}
 );
 
+//
 // Creates virtual property that gets reaction count amount
 thoughtSchema.virtual("reactionCount").get(function () {
 	return this.reactions.length;
 });
 
+//
 // Initialize Thoughts model
 const Thoughts = model("Thoughts", thoughtSchema);
 
+//
 // Exports Thoughts model
 module.exports = Thoughts;

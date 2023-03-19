@@ -1,5 +1,7 @@
+//
 const { Users, Thoughts, Reactions } = require("../models");
 
+//
 module.exports = {
 	// Add a reaction
 	reactionsAdd(req, res) {
